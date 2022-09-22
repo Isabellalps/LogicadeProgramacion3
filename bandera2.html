@@ -1,0 +1,22 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	
+	function dibujarCuadrado(x,y,color){
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+		pincel.fillStyle = color; 
+		pincel.fillRect(x,y,50,50); 
+		pincel.strokeStyle = "pink";
+		pincel.strokeRect(x,y,50,50);
+		
+	}
+
+	dibujarCuadrado(0,0, "purple");
+	dibujarCuadrado(50,50, "pink");
+	dibujarCuadrado(100,0, "lightblue");
+	dibujarCuadrado(0,100, "lightblue");
+	dibujarCuadrado(100,100, "purple");
+	
+</script>
